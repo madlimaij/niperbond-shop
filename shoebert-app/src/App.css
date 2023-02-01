@@ -1,0 +1,8 @@
+.container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+}
+
+/* @Todo: kontrollida, mis on siit vajalik. */
