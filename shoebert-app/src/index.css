@@ -1,7 +1,11 @@
-body,
 html {
-  width: 100%;
+  width: 100%; /* bodyst? */
   height: 100%;
-  margin: 0;
   font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  display: flex;
+  position: relative;
+  margin: 0;
 }

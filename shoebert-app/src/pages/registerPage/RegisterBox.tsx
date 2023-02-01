@@ -13,8 +13,11 @@ const useStyles = createUseStyles({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    height: "40vh",
+    maxHeight: "100%",
+    maxWidth: "100%",
     gap: 15,
-    margin: "calc((100vh - 692px)/2)",
+    margin: "9.5vh",
   },
 
   title: {
@@ -24,12 +27,13 @@ const useStyles = createUseStyles({
 
   field: {
     position: "relative",
-    width: 450,
-    height: 40,
-    margin: 5,
+    width: "35vw",
+    height: "3vh",
+    margin: [5, 0],
     maxWidth: "100%",
-    background: theme.colors.lightLightPink,
+    color: theme.colors.black,
     padding: theme.spacing.s,
+    background: theme.colors.lightLightPink,
     border: [1, "dashed", theme.colors.pink],
     fontSize: theme.typography.h4,
     fontFamily: theme.font.fontFamily,
@@ -40,13 +44,12 @@ const useStyles = createUseStyles({
     cursor: "pointer",
     color: theme.colors.black,
     border: "none",
-    margin: 5,
-    width: 470,
+    width: "36.5vw",
     maxWidth: "100%",
-    position: "relative",
+    margin: [5, 0],
     fontSize: theme.typography.h4,
     fontFamily: theme.font.fontFamily,
-    padding: theme.spacing.s,
+    padding: "0.5vh",
     transition: "background .2s ease-in-out",
     "&:hover": {
       background: theme.colors.gray,
@@ -87,7 +90,7 @@ const RegisterBox: React.FC = () => {
           type="text"
           placeholder="Eesnimi"
           {...register("firstName")}
-        />{" "}
+        />
         <br />
         <input
           className={classes.field}
@@ -113,7 +116,7 @@ const RegisterBox: React.FC = () => {
           title="minimaalselt 8 tähemärki"
           placeholder="Salasõna"
           {...register("password")}
-        />{" "}
+        />
         <br />
         <a href="/login">
           <button className={classes.button}>Registreeru</button>

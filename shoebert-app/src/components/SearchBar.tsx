@@ -10,7 +10,7 @@ type SearchBarProps = {
 const useStyles = createUseStyles({
   input: {
     position: "absolute",
-    top: 185,
+    top: 153,
     right: 40,
     width: 200,
     fontFamily: theme.font.fontFamily,

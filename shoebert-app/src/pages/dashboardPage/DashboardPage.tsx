@@ -50,7 +50,6 @@ const useStyles = createUseStyles({
     backgroundColor: theme.colors.lightPink,
     textAlign: "center",
     heigth: "79px",
-    padding: 25,
     fontSize: theme.spacing.l,
   },
 });

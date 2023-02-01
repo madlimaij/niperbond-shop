@@ -7,6 +7,7 @@ const useStyles = createUseStyles({
     zIndex: 100,
     top: 10,
     left: 15,
+    height:"26vh",
     "@media (max-width: 1000px)": {
       display: "none",
     },

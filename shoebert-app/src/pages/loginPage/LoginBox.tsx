@@ -8,19 +8,23 @@ import { useNavigate } from "react-router-dom";
 
 const useStyles = createUseStyles({
   container: {
-    position: "relative",
     display: "flex",
-    gap: 15,
-    margin: "calc((100vh - 632px)/2)",
-    flexDirection: "column",
+    position: "relative",
+    flexDirection: "column",    
     justifyContent: "center",
     alignItems: "center",
+    gap: 15,
+    height: "40vh",
+    maxHeight: "100%",
+    margin: "9.5vh",
+    maxWidth: "100%"
   },
 
   inputBox: {
     position: "relative",
-    width: 450,
-    margin: 5,
+    width: "35vw",
+    height: "3vh",
+    margin: [5, 0],
     maxWidth: "100%",
     color: theme.colors.black,
     padding: theme.spacing.s,
@@ -31,6 +35,8 @@ const useStyles = createUseStyles({
   },
 
   link: {
+    display:"block",
+    margin: [9, 0],
     color: theme.colors.pink,
     fontSize: theme.typography.h4,
     textDecoration: "underline",
@@ -52,11 +58,12 @@ const useStyles = createUseStyles({
     cursor: "pointer",
     color: theme.colors.black,
     border: "none",
-    width: 470,
+    width: "36.5vw",
     maxWidth: "100%",
+    margin: [5, 0],
     fontSize: theme.typography.h4,
     fontFamily: theme.font.fontFamily,
-    padding: theme.spacing.s,
+    padding: "0.5vh",
     transition: "background .2s ease-in-out",
     "&:hover": {
       background: theme.colors.gray,
@@ -95,23 +102,19 @@ const LoginBox: React.FC = () => {
           placeholder="E-posti aadress"
           className={classes.inputBox}
           {...register("email")}
-        />{" "}
+        />
         <br />
         <input
           type="password"
           placeholder="Salasõna"
           className={classes.inputBox}
           {...register("password")}
-        />{" "}
-        <br />
-        <br />
+        />
         <a
           className={classes.link}
           onClick={() => alert("aga.. Proovi veel, äkki tuleb ikka meelde?")}
         >
           Unustasid salasõna?
-          <br />
-          <br />
         </a>
         <a href="/dashboard">
           <button className={classes.button}>Logi sisse</button>

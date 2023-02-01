@@ -1,69 +1,69 @@
-import React, { useState } from "react";
-import { createUseStyles } from "react-jss";
-import { PinkDiv } from "../../components";
-import theme from "../../common/theme";
-import { RailBoots, RainyBoots } from "../../images";
+import React, { useState } from 'react';
+import { createUseStyles } from 'react-jss';
+import { PinkDiv } from '../../components';
+import theme from '../../common/theme';
+import { RailBoots, RainyBoots } from '../../images';
 
 const useStyles = createUseStyles({
   containerDark: {
     backgroundImage: `url(${RailBoots})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    minWidth: "100%",
-    minHeight: "100%",
-    height: "100vh",
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    minWidth: '100vw',
+    minHeight: '100%',
+    height: '100vh',
   },
   containerLight: {
     backgroundImage: `url(${RainyBoots})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    minWidth: "100%",
-    minHeight: "100%",
-    height: "100vh",
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    minWidth: '100%',
+    minHeight: '100%',
+    height: '100vh',
   },
   buttonGoShop: {
-    position: "fixed",
+    position: 'fixed',
     right: 110,
     bottom: 200,
     height: 60,
     width: 250,
     fontSize: theme.spacing.xl,
-    cursor: "pointer",
-    opacity: "70%",
-    fontWeight: "bold",
+    cursor: 'pointer',
+    opacity: '70%',
+    fontWeight: 'bold',
     fontFamily: theme.font.fontFamily,
-    transition: "background .2s ease-in-out",
-    "&:hover": {
+    transition: 'background .2s ease-in-out',
+    '&:hover': {
       color: theme.colors.pink,
-      opacity: "100%",
+      opacity: '100%',
     },
   },
 
   slogan: {
-    backgroundColor: "white",
+    backgroundColor: 'white',
     fontSize: theme.spacing.l,
-    fontWeight: "bold",
-    height: "auto",
-    width: "fit-content",
+    fontWeight: 'bold',
+    height: 'auto',
+    width: 'fit-content',
     padding: 10,
-    position: "relative",
+    position: 'relative',
     top: 150,
     left: 200,
     border: 1,
     borderColor: theme.colors.black,
-    opacity: "70%",
+    opacity: '70%',
   },
   pinkDivDark: {
     backgroundColor: theme.colors.pink,
-    textAlign: "center",
-    heigth: "79px",
+    textAlign: 'center',
+    heigth: '79px',
     padding: 25,
     fontSize: theme.spacing.l,
   },
   pinkDivLight: {
     backgroundColor: theme.colors.lightPink,
-    textAlign: "center",
-    heigth: "79px",
+    textAlign: 'center',
+    heigth: '79px',
     padding: 25,
     fontSize: theme.spacing.l,
   },
@@ -74,7 +74,7 @@ type LandingBodyProps = {
 };
 
 const LandingBody: React.FC<LandingBodyProps> = ({ darkMode }) => {
-  const adText = "Seitsmepenikoormasaapad -70%";
+  const adText = 'Seitsmepenikoormasaapad -70%';
   const classes = useStyles();
   return (
     <div className={darkMode ? classes.containerDark : classes.containerLight}>
@@ -86,7 +86,7 @@ const LandingBody: React.FC<LandingBodyProps> = ({ darkMode }) => {
 
       <p className={classes.slogan}>Mehised saapad.</p>
       {darkMode ? (
-        <p className={classes.slogan}>Kaagile, kelle elu on rööpas.</p>
+        <p className={classes.slogan}>Mehele, kelle elu on rööpas.</p>
       ) : (
         <p className={classes.slogan}>Poriloikudes keksimiseks.</p>
       )}

@@ -6,9 +6,10 @@ const useStyles = createUseStyles({
   footer: {
     display: "flex",
     justifyContent: "center",
-    height: 70,
+/*     height: 70, */
     bottom: 0,
     width: "100%",
+    height: "10vh",
     backgroundColor: theme.colors.lightBrown,
   },
 
@@ -33,7 +34,7 @@ const Footer: React.FC<FooterProps> = (props) => {
   return (
     <div className={`${classes.footer} ${props.cname}`}>
       <div className={classes.title}>
-        &copy; {new Date().getFullYear()} Niperbond by Madli, Merje, Hanna,
+        &copy; {currentYear} Niperbond by Madli, Merje, Hanna,
         Liisi, Edith ja Kairit
       </div>
     </div>

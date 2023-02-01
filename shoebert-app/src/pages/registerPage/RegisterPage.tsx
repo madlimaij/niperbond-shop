@@ -1,20 +1,20 @@
-import React from "react";
-import { createUseStyles } from "react-jss";
-import { LogoComp, PinkDiv, Button, Footer } from "../../components";
-import theme from "../../common/theme";
-import RegisterBox from "./RegisterBox";
-import { LogoTrans } from "../../images";
+import React from 'react';
+import { createUseStyles } from 'react-jss';
+import { LogoComp, PinkDiv, Button, Footer } from '../../components';
+import theme from '../../common/theme';
+import RegisterBox from './RegisterBox';
+import { LogoTrans } from '../../images';
 
 const useStyles = createUseStyles({
   pinkDiv: {
     backgroundColor: theme.colors.lightPink,
-    textAlign: "center",
-    padding: 41,
+    textAlign: 'center',
+    heigth: '79px',
     fontSize: theme.spacing.l,
   },
 });
 
-const RegisterPage = () => {
+const RegisterPage: React.FC = () => {
   const classes = useStyles();
   return (
     <div>
@@ -22,7 +22,7 @@ const RegisterPage = () => {
       <PinkDiv cname={classes.pinkDiv} />
       <RegisterBox />
       <a href="/login">
-        <Button title={"Logi sisse"} />
+        <Button title={'Logi sisse'} />
       </a>
       <Footer />
     </div>
