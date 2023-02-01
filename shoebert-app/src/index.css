@@ -1,0 +1,11 @@
+body,
+html {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.gap {
+  opacity: 0%;
+  height: 5;
+  padding: 5;
+}
