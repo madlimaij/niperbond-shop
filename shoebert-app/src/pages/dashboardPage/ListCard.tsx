@@ -15,21 +15,22 @@ const useStyles = createUseStyles({
 
   title: {
     color: theme.colors.black,
-    fontSize: theme.typography.h2,
+    fontSize: theme.typography.h3,
     fontFamily: theme.font.fontFamily,
     margin: 10,
   },
 
   price: {
     color: theme.colors.black,
-    fontSize: theme.typography.h2,
+    fontSize: theme.typography.h3,
+    fontWeight: "bold",
     alignItems: "left",
     margin: 20,
   },
 
   description: {
     color: theme.colors.black,
-    fontSize: theme.typography.body,
+    fontSize: theme.typography.bodySmall,
     fontFamily: theme.font.fontFamily,
     margin: 10,
     "@media (max-width: 1300px)": {
@@ -43,7 +44,7 @@ const useStyles = createUseStyles({
     fontSize: 20,
     padding: [40, 20, 20, 20],
     "&>img": {
-      width: "200px",
+      width: "150px",
     },
   },
 

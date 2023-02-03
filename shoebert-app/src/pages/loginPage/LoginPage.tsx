@@ -6,7 +6,6 @@ import LogoComp from "../../components/LogoComp";
 import PinkDiv from "../../components/PinkDiv";
 import theme from "../../common/theme";
 import { LogoTrans } from "../../images";
-import { Button } from "../../components";
 
 const useStyles = createUseStyles({
   pinkDiv: {
@@ -25,9 +24,6 @@ const LoginPage = () => {
       <PinkDiv cname={classes.pinkDiv} />
       <LoginBox />
       <Footer />
-      <a href="/register">
-        <Button title={"Registreeru"} />
-      </a>
     </div>
   );
 };
